@@ -9,8 +9,8 @@ function App() {
   <div>
     <h1>ReStore</h1>
     <ul>
-      {products.map(item => (
-        <li>
+      {products.map((item, index) => (
+        <li key={index}>
           {item.name} - {item.price}
         </li>
       ))}
