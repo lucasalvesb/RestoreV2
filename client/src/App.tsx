@@ -2,7 +2,11 @@ import { useEffect, useState } from "react"
 
 function App() {
 
-  const [products, setProducts] = useState([])
+  type Product = {
+    name: string;
+    price: number;
+  }
+  const [products, setProducts] = useState<Product[]>([])
 
   useEffect(() => {
     fetch('https://localhost:5001/api/products')
