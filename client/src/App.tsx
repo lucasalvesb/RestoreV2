@@ -17,7 +17,7 @@ function App() {
 
   return (
   <div>
-    <h1>ReStore v2</h1>
+    <h1>ReStore v2 desktop</h1>
     <ul>
       {products.map((item, index) => (
         <li key={index}>
